@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hayk AVETISYAN"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/media/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?version=1.2"/>
+
+    <title>Calm Down!</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css"/>
+
+
+</head>
+<body id="angry">
+
+<main class="container-fluid">
+    <a class="logo" href="http://www.foaas.com/" target="_blank"><h1><i class="fa fa-fw fa-rocket"></i> FOAAS</h1></a>
+    <form>
+        <fieldset>
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <p class="input-group">
+                        <select id="options" class="form-control input-lg"></select>
+                        <span class="input-group-btn">
+                            <button id="go" class="btn btn-lg btn-primary" type="button" data-toggle="modal"
+                                    data-target="#prepModal"><i class="fa fa-fighter-jet"></i>&nbsp;&nbsp;Go!</button>
+                        </span>
+                    </p>
+
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Modal details -->
+        <div class="modal fade" id="prepModal" tabindex="-1" role="dialog" aria-labelledby="prepyModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="prepModalLabel"><i class="fa fa-fw fa-map-marker"></i> Need more fuckin' details...</h4>
+                    </div>
+                    <div id="data-fields" class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-paw"></i>&nbsp;&nbsp;I retreat, cuz I'm a Pussy!
+                        </button>
+                        <button id="btn-fuck" type="submit" class="btn btn-danger btn-lg"><i
+                                class="fa fa-rocket"></i>&nbsp;&nbsp;Let's kick that ass!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Modal message -->
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="messageModalLabel"><i class="fa fa-fw fa-envelope-open"></i> FOAAS</h4>
+                </div>
+                <div id="data-message" class="modal-body">
+                    <blockquote>
+                        <p></p>
+                        <footer></footer>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-info" data-dismiss="modal"><i
+                            class="fa fa-snowflake-o"></i>&nbsp;&nbsp;Cool!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
